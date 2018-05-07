@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		285007E91FA57F1500062437 /* ForgetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285007E81FA57F1500062437 /* ForgetViewController.swift */; };
+		285007EB1FA57F4C00062437 /* InformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285007EA1FA57F4C00062437 /* InformationViewController.swift */; };
+		285007EE1FA57F8C00062437 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285007ED1FA57F8C00062437 /* User.swift */; };
+		285007F01FA57FF000062437 /* MyMeetingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285007EF1FA57FF000062437 /* MyMeetingController.swift */; };
+		285007F21FA5806600062437 /* MeetingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285007F11FA5806600062437 /* MeetingModel.swift */; };
+		285007F41FA580D200062437 /* MeetingViewCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285007F31FA580D200062437 /* MeetingViewCellTableViewCell.swift */; };
+		285007F61FA5811200062437 /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285007F51FA5811200062437 /* Doctor.swift */; };
+		285007F81FA5813400062437 /* Meeting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285007F71FA5813400062437 /* Meeting.swift */; };
+		285007FA1FA5817D00062437 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285007F91FA5817D00062437 /* Result.swift */; };
+		285008011FA5830200062437 /* MeetingDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285008001FA5830200062437 /* MeetingDetailController.swift */; };
+		285008031FA5835D00062437 /* MeetingResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285008021FA5835D00062437 /* MeetingResultController.swift */; };
+		28DEF28C1FA56D8D00CC1C3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF28B1FA56D8D00CC1C3D /* AppDelegate.swift */; };
+		28DEF28E1FA56D8D00CC1C3D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF28D1FA56D8D00CC1C3D /* ViewController.swift */; };
+		28DEF2911FA56D8D00CC1C3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DEF28F1FA56D8D00CC1C3D /* Main.storyboard */; };
+		28DEF2931FA56D8D00CC1C3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28DEF2921FA56D8D00CC1C3D /* Assets.xcassets */; };
+		28DEF2A01FA56F0900CC1C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DEF29F1FA56EFC00CC1C3D /* LaunchScreen.storyboard */; };
+		28DEF2A51FA572FC00CC1C3D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2A41FA572FB00CC1C3D /* BaseViewController.swift */; };
+		28DEF2BA1FA5762100CC1C3D /* SwiftToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2A81FA5737500CC1C3D /* SwiftToast.swift */; };
+		28DEF2BB1FA5762400CC1C3D /* UITextField-extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2A91FA5737500CC1C3D /* UITextField-extension.swift */; };
+		28DEF2BC1FA5762600CC1C3D /* UploadFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2AB1FA5737600CC1C3D /* UploadFile.swift */; };
+		28DEF2BD1FA5762800CC1C3D /* ValidateTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2AC1FA5737600CC1C3D /* ValidateTools.swift */; };
+		28DEF2BE1FA5762A00CC1C3D /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2AA1FA5737600CC1C3D /* Common.swift */; };
+		28DEF2BF1FA5762C00CC1C3D /* NetworkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2AD1FA5737C00CC1C3D /* NetworkTools.swift */; };
+		28DEF2C61FA5789700CC1C3D /* MyMeeting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28DEF2C51FA5788600CC1C3D /* MyMeeting.storyboard */; };
+		28DEF2C91FA57A4200CC1C3D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2C81FA57A4200CC1C3D /* ProfileViewController.swift */; };
+		28DEF2CB1FA57B6900CC1C3D /* ModifierViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2CA1FA57B6900CC1C3D /* ModifierViewController.swift */; };
+		28DEF2CD1FA57BCB00CC1C3D /* ModifierPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2CC1FA57BCB00CC1C3D /* ModifierPasswordViewController.swift */; };
+		28DEF2D71FA57D7F00CC1C3D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2D61FA57D7F00CC1C3D /* MainViewController.swift */; };
+		28DEF2E81FA57E7A00CC1C3D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2E71FA57E7A00CC1C3D /* LoginViewController.swift */; };
+		28DEF2EA1FA57EAD00CC1C3D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28DEF2E91FA57EAD00CC1C3D /* RegisterViewController.swift */; };
+		BF2801AF6B8FF9EBEDB0B617 /* Pods_Remote_medical_System_patient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF43FDA08E02230B81895E4A /* Pods_Remote_medical_System_patient.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		285007E81FA57F1500062437 /* ForgetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetViewController.swift; sourceTree = "<group>"; };
+		285007EA1FA57F4C00062437 /* InformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationViewController.swift; sourceTree = "<group>"; };
+		285007ED1FA57F8C00062437 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		285007EF1FA57FF000062437 /* MyMeetingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMeetingController.swift; sourceTree = "<group>"; };
+		285007F11FA5806600062437 /* MeetingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingModel.swift; sourceTree = "<group>"; };
+		285007F31FA580D200062437 /* MeetingViewCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingViewCellTableViewCell.swift; sourceTree = "<group>"; };
+		285007F51FA5811200062437 /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
+		285007F71FA5813400062437 /* Meeting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meeting.swift; sourceTree = "<group>"; };
+		285007F91FA5817D00062437 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		285007FD1FA5824900062437 /* meetingDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = meetingDetail.storyboard; sourceTree = "<group>"; };
+		285008001FA5830200062437 /* MeetingDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingDetailController.swift; sourceTree = "<group>"; };
+		285008021FA5835D00062437 /* MeetingResultController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingResultController.swift; sourceTree = "<group>"; };
+		28DEF2881FA56D8D00CC1C3D /* Remote_medical_System_patient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Remote_medical_System_patient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28DEF28B1FA56D8D00CC1C3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28DEF28D1FA56D8D00CC1C3D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28DEF2901FA56D8D00CC1C3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28DEF2921FA56D8D00CC1C3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28DEF2971FA56D8D00CC1C3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28DEF29F1FA56EFC00CC1C3D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28DEF2A41FA572FB00CC1C3D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		28DEF2A81FA5737500CC1C3D /* SwiftToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftToast.swift; sourceTree = "<group>"; };
+		28DEF2A91FA5737500CC1C3D /* UITextField-extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField-extension.swift"; sourceTree = "<group>"; };
+		28DEF2AA1FA5737600CC1C3D /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		28DEF2AB1FA5737600CC1C3D /* UploadFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadFile.swift; sourceTree = "<group>"; };
+		28DEF2AC1FA5737600CC1C3D /* ValidateTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateTools.swift; sourceTree = "<group>"; };
+		28DEF2AD1FA5737C00CC1C3D /* NetworkTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkTools.swift; sourceTree = "<group>"; };
+		28DEF2C51FA5788600CC1C3D /* MyMeeting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyMeeting.storyboard; sourceTree = "<group>"; };
+		28DEF2C71FA579EE00CC1C3D /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		28DEF2C81FA57A4200CC1C3D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		28DEF2CA1FA57B6900CC1C3D /* ModifierViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierViewController.swift; sourceTree = "<group>"; };
+		28DEF2CC1FA57BCB00CC1C3D /* ModifierPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierPasswordViewController.swift; sourceTree = "<group>"; };
+		28DEF2D61FA57D7F00CC1C3D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		28DEF2E61FA57E2F00CC1C3D /* login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = login.storyboard; sourceTree = "<group>"; };
+		28DEF2E71FA57E7A00CC1C3D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		28DEF2E91FA57EAD00CC1C3D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5C0221F98549794BD37091FE /* Pods-Remote_medical_System_patient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote_medical_System_patient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Remote_medical_System_patient/Pods-Remote_medical_System_patient.debug.xcconfig"; sourceTree = "<group>"; };
+		DA4159AC81F7769B34912DA9 /* Pods-Remote_medical_System_patient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Remote_medical_System_patient.release.xcconfig"; path = "Pods/Target Support Files/Pods-Remote_medical_System_patient/Pods-Remote_medical_System_patient.release.xcconfig"; sourceTree = "<group>"; };
+		FF43FDA08E02230B81895E4A /* Pods_Remote_medical_System_patient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Remote_medical_System_patient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28DEF2851FA56D8D00CC1C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF2801AF6B8FF9EBEDB0B617 /* Pods_Remote_medical_System_patient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		285007EC1FA57F8200062437 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				285007ED1FA57F8C00062437 /* User.swift */,
+				285007F11FA5806600062437 /* MeetingModel.swift */,
+				285007F51FA5811200062437 /* Doctor.swift */,
+				285007F71FA5813400062437 /* Meeting.swift */,
+				285007F91FA5817D00062437 /* Result.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		285007FC1FA5821100062437 /* 会诊详情 */ = {
+			isa = PBXGroup;
+			children = (
+				285007FD1FA5824900062437 /* meetingDetail.storyboard */,
+				285008001FA5830200062437 /* MeetingDetailController.swift */,
+				285008021FA5835D00062437 /* MeetingResultController.swift */,
+			);
+			path = "会诊详情";
+			sourceTree = "<group>";
+		};
+		28DEF27F1FA56D8D00CC1C3D = {
+			isa = PBXGroup;
+			children = (
+				28DEF28A1FA56D8D00CC1C3D /* Remote_medical_System_patient */,
+				28DEF2891FA56D8D00CC1C3D /* Products */,
+				580B52B277879DAED21572FB /* Pods */,
+				D9EDCAFECFF9D0BCA4B7252B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28DEF2891FA56D8D00CC1C3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28DEF2881FA56D8D00CC1C3D /* Remote_medical_System_patient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28DEF28A1FA56D8D00CC1C3D /* Remote_medical_System_patient */ = {
+			isa = PBXGroup;
+			children = (
+				28DEF29D1FA56DB500CC1C3D /* Classes */,
+				28DEF28B1FA56D8D00CC1C3D /* AppDelegate.swift */,
+				28DEF28D1FA56D8D00CC1C3D /* ViewController.swift */,
+				28DEF29F1FA56EFC00CC1C3D /* LaunchScreen.storyboard */,
+				28DEF28F1FA56D8D00CC1C3D /* Main.storyboard */,
+				28DEF2A41FA572FB00CC1C3D /* BaseViewController.swift */,
+				28DEF2921FA56D8D00CC1C3D /* Assets.xcassets */,
+				28DEF2971FA56D8D00CC1C3D /* Info.plist */,
+				28DEF2D61FA57D7F00CC1C3D /* MainViewController.swift */,
+			);
+			path = Remote_medical_System_patient;
+			sourceTree = "<group>";
+		};
+		28DEF29D1FA56DB500CC1C3D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				285007FC1FA5821100062437 /* 会诊详情 */,
+				28DEF2E51FA57E0C00CC1C3D /* 登录 */,
+				28DEF2C01FA577FE00CC1C3D /* 会诊 */,
+				28DEF2A61FA5734200CC1C3D /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		28DEF2A61FA5734200CC1C3D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				28DEF2AA1FA5737600CC1C3D /* Common.swift */,
+				28DEF2A81FA5737500CC1C3D /* SwiftToast.swift */,
+				28DEF2A91FA5737500CC1C3D /* UITextField-extension.swift */,
+				28DEF2AB1FA5737600CC1C3D /* UploadFile.swift */,
+				28DEF2AC1FA5737600CC1C3D /* ValidateTools.swift */,
+				28DEF2A71FA5736000CC1C3D /* AFNetworkingTools */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		28DEF2A71FA5736000CC1C3D /* AFNetworkingTools */ = {
+			isa = PBXGroup;
+			children = (
+				28DEF2AD1FA5737C00CC1C3D /* NetworkTools.swift */,
+			);
+			path = AFNetworkingTools;
+			sourceTree = "<group>";
+		};
+		28DEF2C01FA577FE00CC1C3D /* 会诊 */ = {
+			isa = PBXGroup;
+			children = (
+				28DEF2C21FA5782600CC1C3D /* 个人中心 */,
+				28DEF2C11FA5782600CC1C3D /* 历史记录 */,
+				28DEF2C31FA5782600CC1C3D /* 首页 */,
+				28DEF2C41FA5782600CC1C3D /* 我的会诊 */,
+			);
+			path = "会诊";
+			sourceTree = "<group>";
+		};
+		28DEF2C11FA5782600CC1C3D /* 历史记录 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "历史记录";
+			sourceTree = "<group>";
+		};
+		28DEF2C21FA5782600CC1C3D /* 个人中心 */ = {
+			isa = PBXGroup;
+			children = (
+				28DEF2C71FA579EE00CC1C3D /* Profile.storyboard */,
+				28DEF2C81FA57A4200CC1C3D /* ProfileViewController.swift */,
+				28DEF2CA1FA57B6900CC1C3D /* ModifierViewController.swift */,
+				28DEF2CC1FA57BCB00CC1C3D /* ModifierPasswordViewController.swift */,
+			);
+			path = "个人中心";
+			sourceTree = "<group>";
+		};
+		28DEF2C31FA5782600CC1C3D /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "首页";
+			sourceTree = "<group>";
+		};
+		28DEF2C41FA5782600CC1C3D /* 我的会诊 */ = {
+			isa = PBXGroup;
+			children = (
+				28DEF2C51FA5788600CC1C3D /* MyMeeting.storyboard */,
+				285007EF1FA57FF000062437 /* MyMeetingController.swift */,
+				285007F31FA580D200062437 /* MeetingViewCellTableViewCell.swift */,
+			);
+			path = "我的会诊";
+			sourceTree = "<group>";
+		};
+		28DEF2E51FA57E0C00CC1C3D /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				285007EC1FA57F8200062437 /* model */,
+				28DEF2E61FA57E2F00CC1C3D /* login.storyboard */,
+				28DEF2E71FA57E7A00CC1C3D /* LoginViewController.swift */,
+				28DEF2E91FA57EAD00CC1C3D /* RegisterViewController.swift */,
+				285007E81FA57F1500062437 /* ForgetViewController.swift */,
+				285007EA1FA57F4C00062437 /* InformationViewController.swift */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		580B52B277879DAED21572FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5C0221F98549794BD37091FE /* Pods-Remote_medical_System_patient.debug.xcconfig */,
+				DA4159AC81F7769B34912DA9 /* Pods-Remote_medical_System_patient.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D9EDCAFECFF9D0BCA4B7252B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF43FDA08E02230B81895E4A /* Pods_Remote_medical_System_patient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28DEF2871FA56D8D00CC1C3D /* Remote_medical_System_patient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28DEF29A1FA56D8D00CC1C3D /* Build configuration list for PBXNativeTarget "Remote_medical_System_patient" */;
+			buildPhases = (
+				D97DCEDB464C919E6DE95E94 /* [CP] Check Pods Manifest.lock */,
+				28DEF2841FA56D8D00CC1C3D /* Sources */,
+				28DEF2851FA56D8D00CC1C3D /* Frameworks */,
+				28DEF2861FA56D8D00CC1C3D /* Resources */,
+				33C056A7CA2E8029FD7BACBE /* [CP] Embed Pods Frameworks */,
+				3009956758AD79EE07B0D6DC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Remote_medical_System_patient;
+			productName = Remote_medical_System_patient;
+			productReference = 28DEF2881FA56D8D00CC1C3D /* Remote_medical_System_patient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28DEF2801FA56D8D00CC1C3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = newfolder;
+				TargetAttributes = {
+					28DEF2871FA56D8D00CC1C3D = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 28DEF2831FA56D8D00CC1C3D /* Build configuration list for PBXProject "Remote_medical_System_patient" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28DEF27F1FA56D8D00CC1C3D;
+			productRefGroup = 28DEF2891FA56D8D00CC1C3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28DEF2871FA56D8D00CC1C3D /* Remote_medical_System_patient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28DEF2861FA56D8D00CC1C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28DEF2C61FA5789700CC1C3D /* MyMeeting.storyboard in Resources */,
+				28DEF2A01FA56F0900CC1C3D /* LaunchScreen.storyboard in Resources */,
+				28DEF2931FA56D8D00CC1C3D /* Assets.xcassets in Resources */,
+				28DEF2911FA56D8D00CC1C3D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3009956758AD79EE07B0D6DC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remote_medical_System_patient/Pods-Remote_medical_System_patient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33C056A7CA2E8029FD7BACBE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Remote_medical_System_patient/Pods-Remote_medical_System_patient-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Remote_medical_System_patient/Pods-Remote_medical_System_patient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D97DCEDB464C919E6DE95E94 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Remote_medical_System_patient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28DEF2841FA56D8D00CC1C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				285007F61FA5811200062437 /* Doctor.swift in Sources */,
+				28DEF2E81FA57E7A00CC1C3D /* LoginViewController.swift in Sources */,
+				28DEF2BD1FA5762800CC1C3D /* ValidateTools.swift in Sources */,
+				28DEF2BF1FA5762C00CC1C3D /* NetworkTools.swift in Sources */,
+				28DEF2BA1FA5762100CC1C3D /* SwiftToast.swift in Sources */,
+				28DEF28E1FA56D8D00CC1C3D /* ViewController.swift in Sources */,
+				285007FA1FA5817D00062437 /* Result.swift in Sources */,
+				28DEF2BE1FA5762A00CC1C3D /* Common.swift in Sources */,
+				28DEF2EA1FA57EAD00CC1C3D /* RegisterViewController.swift in Sources */,
+				285008011FA5830200062437 /* MeetingDetailController.swift in Sources */,
+				28DEF2D71FA57D7F00CC1C3D /* MainViewController.swift in Sources */,
+				285007F41FA580D200062437 /* MeetingViewCellTableViewCell.swift in Sources */,
+				28DEF2C91FA57A4200CC1C3D /* ProfileViewController.swift in Sources */,
+				28DEF2BB1FA5762400CC1C3D /* UITextField-extension.swift in Sources */,
+				28DEF2BC1FA5762600CC1C3D /* UploadFile.swift in Sources */,
+				285007E91FA57F1500062437 /* ForgetViewController.swift in Sources */,
+				28DEF2CD1FA57BCB00CC1C3D /* ModifierPasswordViewController.swift in Sources */,
+				285007F81FA5813400062437 /* Meeting.swift in Sources */,
+				285007F01FA57FF000062437 /* MyMeetingController.swift in Sources */,
+				28DEF2CB1FA57B6900CC1C3D /* ModifierViewController.swift in Sources */,
+				285007EE1FA57F8C00062437 /* User.swift in Sources */,
+				28DEF28C1FA56D8D00CC1C3D /* AppDelegate.swift in Sources */,
+				285008031FA5835D00062437 /* MeetingResultController.swift in Sources */,
+				28DEF2A51FA572FC00CC1C3D /* BaseViewController.swift in Sources */,
+				285007EB1FA57F4C00062437 /* InformationViewController.swift in Sources */,
+				285007F21FA5806600062437 /* MeetingModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		28DEF28F1FA56D8D00CC1C3D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28DEF2901FA56D8D00CC1C3D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28DEF2981FA56D8D00CC1C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28DEF2991FA56D8D00CC1C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28DEF29B1FA56D8D00CC1C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C0221F98549794BD37091FE /* Pods-Remote_medical_System_patient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXW8S99FYG;
+				INFOPLIST_FILE = Remote_medical_System_patient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.newfolder.Remote-medical-System-patient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		28DEF29C1FA56D8D00CC1C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA4159AC81F7769B34912DA9 /* Pods-Remote_medical_System_patient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UXW8S99FYG;
+				INFOPLIST_FILE = Remote_medical_System_patient/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cn.com.newfolder.Remote-medical-System-patient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28DEF2831FA56D8D00CC1C3D /* Build configuration list for PBXProject "Remote_medical_System_patient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DEF2981FA56D8D00CC1C3D /* Debug */,
+				28DEF2991FA56D8D00CC1C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28DEF29A1FA56D8D00CC1C3D /* Build configuration list for PBXNativeTarget "Remote_medical_System_patient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28DEF29B1FA56D8D00CC1C3D /* Debug */,
+				28DEF29C1FA56D8D00CC1C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28DEF2801FA56D8D00CC1C3D /* Project object */;
+}
