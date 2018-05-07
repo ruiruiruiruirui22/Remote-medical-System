@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tzj-kJ-9Vj">
+            <objects>
+                <viewController id="FQm-kM-VZt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MDx-DP-ob6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GhC-xn-OSh">
+                                <rect key="frame" x="37" y="445" width="93.5" height="130"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="Fvg-Su-6XD"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N4e-s9-V0x">
+                                <rect key="frame" x="244.5" y="445" width="93.5" height="130"/>
+                                <color key="backgroundColor" red="0.0" green="0.93200745559999998" blue="0.60767764739999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="txo-5W-ps4">
+                                <rect key="frame" x="155.5" y="480" width="64" height="60"/>
+                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="3gt-S9-BdE"/>
+                                    <constraint firstAttribute="height" constant="60" id="E1e-HQ-KXA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5b-Ai-Pcn">
+                                <rect key="frame" x="171" y="454" width="34" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="txo-5W-ps4" firstAttribute="centerY" secondItem="GhC-xn-OSh" secondAttribute="centerY" id="2Oq-Oo-o0c"/>
+                            <constraint firstItem="9bm-2i-d3Y" firstAttribute="bottom" secondItem="GhC-xn-OSh" secondAttribute="bottom" constant="92" id="2x6-A3-pTa"/>
+                            <constraint firstItem="txo-5W-ps4" firstAttribute="top" secondItem="P5b-Ai-Pcn" secondAttribute="bottom" constant="10" id="DAo-QZ-LaP"/>
+                            <constraint firstItem="N4e-s9-V0x" firstAttribute="leading" secondItem="txo-5W-ps4" secondAttribute="trailing" constant="25" id="FjR-OD-Lch"/>
+                            <constraint firstItem="GhC-xn-OSh" firstAttribute="leading" secondItem="9bm-2i-d3Y" secondAttribute="leading" constant="37" id="IRC-qR-jab"/>
+                            <constraint firstItem="N4e-s9-V0x" firstAttribute="height" secondItem="GhC-xn-OSh" secondAttribute="height" id="Kqx-dn-IEU"/>
+                            <constraint firstItem="txo-5W-ps4" firstAttribute="leading" secondItem="GhC-xn-OSh" secondAttribute="trailing" constant="25" id="T1b-fX-P8D"/>
+                            <constraint firstItem="N4e-s9-V0x" firstAttribute="width" secondItem="GhC-xn-OSh" secondAttribute="width" id="Wx9-Xv-vzV"/>
+                            <constraint firstItem="9bm-2i-d3Y" firstAttribute="trailing" secondItem="N4e-s9-V0x" secondAttribute="trailing" constant="37" id="hbX-pH-jaz"/>
+                            <constraint firstItem="txo-5W-ps4" firstAttribute="centerX" secondItem="P5b-Ai-Pcn" secondAttribute="centerX" id="n1z-8o-l80"/>
+                            <constraint firstItem="txo-5W-ps4" firstAttribute="centerX" secondItem="MDx-DP-ob6" secondAttribute="centerX" id="ur7-ip-UGv"/>
+                            <constraint firstItem="9bm-2i-d3Y" firstAttribute="bottom" secondItem="N4e-s9-V0x" secondAttribute="bottom" constant="92" id="zzl-Q5-DJn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9bm-2i-d3Y"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZTE-3f-jSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4994.3999999999996" y="-857.72113943028489"/>
+        </scene>
+        <!--会诊报告-->
+        <scene sceneID="GTV-Gz-nSH">
+            <objects>
+                <viewController id="y2j-5R-e5o" userLabel="会诊报告" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K6Q-9r-df9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1U1-fe-k8W">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Apy-Rd-fGx"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="会诊报告" id="iAn-iR-73z">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="gLo-Ld-bTK"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdB-6D-bfr">
+                                <rect key="frame" x="0.0" y="611" width="188" height="56"/>
+                                <color key="backgroundColor" red="0.14418537249999999" green="0.85483423219999999" blue="0.81592330970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="UC3-kR-TTX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xet-nd-WWJ">
+                                <rect key="frame" x="187.5" y="611" width="187.5" height="56"/>
+                                <color key="backgroundColor" red="0.14418537249999999" green="0.85483423219999999" blue="0.81592330970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="B58-WV-RUg" userLabel="分割线">
+                                <rect key="frame" x="187" y="622" width="1" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="QcL-BC-zaC"/>
+                                    <constraint firstAttribute="width" constant="1" id="TnA-6x-N4c"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" canCancelContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qer-YI-rZ4">
+                                <rect key="frame" x="0.0" y="64" width="375" height="547"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="外伤情况" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ep-tc-igV">
+                                <rect key="frame" x="16" y="411.5" width="53.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="nC2-kp-pSR">
+                                <rect key="frame" x="16" y="425.5" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手术情况" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XwD-NM-gYl">
+                                <rect key="frame" x="16" y="302.5" width="53.5" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11" id="1k8-aP-3Fa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="WpU-7G-e1B">
+                                <rect key="frame" x="16" y="316.5" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否就医" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKG-JX-V69">
+                                <rect key="frame" x="16" y="193" width="53.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="RRZ-ER-XEp">
+                                <rect key="frame" x="16" y="207" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="病情描述" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Dz-QI-Yrw">
+                                <rect key="frame" x="16" y="84" width="53.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="Dac-1p-owr">
+                                <rect key="frame" x="16" y="98" width="344" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Ama-b2-tZc"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="药物过敏史" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljZ-JQ-HM3">
+                                <rect key="frame" x="16" y="629.5" width="66.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="VFe-z4-ySN">
+                                <rect key="frame" x="16" y="648.5" width="344" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Z5a-Fz-a54"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="药物过敏史" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJl-Hn-ugj">
+                                <rect key="frame" x="16" y="520.5" width="66.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="v4r-47-upX">
+                                <rect key="frame" x="16" y="534.5" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="OY0-oo-5EV" firstAttribute="trailing" secondItem="xet-nd-WWJ" secondAttribute="trailing" id="11h-Pu-gEj"/>
+                            <constraint firstItem="1U1-fe-k8W" firstAttribute="trailing" secondItem="OY0-oo-5EV" secondAttribute="trailing" id="3Ml-W2-O5q"/>
+                            <constraint firstItem="4Dz-QI-Yrw" firstAttribute="top" secondItem="qer-YI-rZ4" secondAttribute="top" constant="20" id="4gn-1I-Nda"/>
+                            <constraint firstItem="1U1-fe-k8W" firstAttribute="leading" secondItem="OY0-oo-5EV" secondAttribute="leading" id="50c-rH-tF5"/>
+                            <constraint firstItem="nC2-kp-pSR" firstAttribute="leading" secondItem="5ep-tc-igV" secondAttribute="leading" id="5FK-8A-OEO"/>
+                            <constraint firstItem="v4r-47-upX" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="5MI-an-WbT"/>
+                            <constraint firstItem="5ep-tc-igV" firstAttribute="height" secondItem="4Dz-QI-Yrw" secondAttribute="height" id="6fe-sE-0jy"/>
+                            <constraint firstItem="OY0-oo-5EV" firstAttribute="trailing" secondItem="qer-YI-rZ4" secondAttribute="trailing" id="6wg-a3-En6"/>
+                            <constraint firstItem="OJl-Hn-ugj" firstAttribute="top" secondItem="nC2-kp-pSR" secondAttribute="bottom" constant="15" id="9gd-8w-THG"/>
+                            <constraint firstItem="RRZ-ER-XEp" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="ANR-CL-qfz"/>
+                            <constraint firstItem="RRZ-ER-XEp" firstAttribute="leading" secondItem="JKG-JX-V69" secondAttribute="leading" id="CsN-pW-1a7"/>
+                            <constraint firstItem="nC2-kp-pSR" firstAttribute="height" secondItem="Dac-1p-owr" secondAttribute="height" id="DiV-SW-IPj"/>
+                            <constraint firstItem="VFe-z4-ySN" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="Dsj-ih-ton"/>
+                            <constraint firstItem="XwD-NM-gYl" firstAttribute="height" secondItem="4Dz-QI-Yrw" secondAttribute="height" id="ECc-wG-Q7A"/>
+                            <constraint firstItem="B58-WV-RUg" firstAttribute="centerX" secondItem="K6Q-9r-df9" secondAttribute="centerX" id="Ech-3n-L2L"/>
+                            <constraint firstItem="VdB-6D-bfr" firstAttribute="bottom" secondItem="OY0-oo-5EV" secondAttribute="bottom" id="EwS-Bw-e0D"/>
+                            <constraint firstItem="xet-nd-WWJ" firstAttribute="height" secondItem="VdB-6D-bfr" secondAttribute="height" id="FZO-aP-7Zd"/>
+                            <constraint firstItem="WpU-7G-e1B" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="Iqf-Fr-EjF"/>
+                            <constraint firstItem="v4r-47-upX" firstAttribute="height" secondItem="Dac-1p-owr" secondAttribute="height" id="K0W-oA-uTL"/>
+                            <constraint firstItem="qer-YI-rZ4" firstAttribute="top" secondItem="1U1-fe-k8W" secondAttribute="bottom" id="KDQ-4b-c5o"/>
+                            <constraint firstItem="ljZ-JQ-HM3" firstAttribute="top" secondItem="v4r-47-upX" secondAttribute="bottom" constant="15" id="MLV-Ce-S6i"/>
+                            <constraint firstItem="OY0-oo-5EV" firstAttribute="trailing" secondItem="Dac-1p-owr" secondAttribute="trailing" constant="15" id="Nzd-Dy-lF6"/>
+                            <constraint firstItem="xet-nd-WWJ" firstAttribute="centerY" secondItem="VdB-6D-bfr" secondAttribute="centerY" id="QgP-eo-PEx"/>
+                            <constraint firstItem="nC2-kp-pSR" firstAttribute="trailing" secondItem="Dac-1p-owr" secondAttribute="trailing" id="Szw-EV-sHe"/>
+                            <constraint firstItem="VdB-6D-bfr" firstAttribute="leading" secondItem="OY0-oo-5EV" secondAttribute="leading" id="T7d-yE-W1p"/>
+                            <constraint firstItem="WpU-7G-e1B" firstAttribute="top" secondItem="XwD-NM-gYl" secondAttribute="bottom" constant="3" id="Tbn-x2-oA7"/>
+                            <constraint firstItem="JKG-JX-V69" firstAttribute="height" secondItem="4Dz-QI-Yrw" secondAttribute="height" id="UQh-EC-fru"/>
+                            <constraint firstItem="RRZ-ER-XEp" firstAttribute="top" secondItem="JKG-JX-V69" secondAttribute="bottom" constant="3" id="V77-40-pQG"/>
+                            <constraint firstItem="xet-nd-WWJ" firstAttribute="bottom" secondItem="OY0-oo-5EV" secondAttribute="bottom" id="Vbv-ZC-Nu8"/>
+                            <constraint firstItem="v4r-47-upX" firstAttribute="trailing" secondItem="Dac-1p-owr" secondAttribute="trailing" id="WCI-hN-wh9"/>
+                            <constraint firstItem="5ep-tc-igV" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="Xap-cs-oK8"/>
+                            <constraint firstItem="RRZ-ER-XEp" firstAttribute="height" secondItem="Dac-1p-owr" secondAttribute="height" id="YZl-2E-G7d"/>
+                            <constraint firstItem="OJl-Hn-ugj" firstAttribute="height" secondItem="4Dz-QI-Yrw" secondAttribute="height" id="cC7-kg-Xeh"/>
+                            <constraint firstItem="RRZ-ER-XEp" firstAttribute="trailing" secondItem="Dac-1p-owr" secondAttribute="trailing" id="e3H-uV-58w"/>
+                            <constraint firstItem="JKG-JX-V69" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="ePP-pB-AeP"/>
+                            <constraint firstItem="v4r-47-upX" firstAttribute="top" secondItem="OJl-Hn-ugj" secondAttribute="bottom" constant="3" id="fhZ-am-8Ln"/>
+                            <constraint firstItem="Dac-1p-owr" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="fja-fV-wdR"/>
+                            <constraint firstItem="nC2-kp-pSR" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="g6T-L9-3gM"/>
+                            <constraint firstItem="XwD-NM-gYl" firstAttribute="top" secondItem="RRZ-ER-XEp" secondAttribute="bottom" constant="15" id="gPD-y9-FbT"/>
+                            <constraint firstItem="xet-nd-WWJ" firstAttribute="width" secondItem="VdB-6D-bfr" secondAttribute="width" id="gcS-8m-krn"/>
+                            <constraint firstItem="1U1-fe-k8W" firstAttribute="top" secondItem="OY0-oo-5EV" secondAttribute="top" id="h0p-rB-wup"/>
+                            <constraint firstItem="ljZ-JQ-HM3" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="iDK-gF-YjL"/>
+                            <constraint firstItem="WpU-7G-e1B" firstAttribute="leading" secondItem="XwD-NM-gYl" secondAttribute="leading" id="jK7-Hl-RWI"/>
+                            <constraint firstItem="Dac-1p-owr" firstAttribute="top" secondItem="4Dz-QI-Yrw" secondAttribute="bottom" constant="3" id="jRx-tl-Kgh"/>
+                            <constraint firstItem="xet-nd-WWJ" firstAttribute="leading" secondItem="VdB-6D-bfr" secondAttribute="trailing" id="kIE-uo-G2A"/>
+                            <constraint firstItem="Dac-1p-owr" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="kuk-S3-Qbs"/>
+                            <constraint firstItem="OJl-Hn-ugj" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="lMt-aV-ShS"/>
+                            <constraint firstItem="WpU-7G-e1B" firstAttribute="trailing" secondItem="Dac-1p-owr" secondAttribute="trailing" id="lai-ip-Xzy"/>
+                            <constraint firstItem="nC2-kp-pSR" firstAttribute="top" secondItem="5ep-tc-igV" secondAttribute="bottom" constant="3" id="mSW-G0-u1d"/>
+                            <constraint firstItem="XwD-NM-gYl" firstAttribute="leading" secondItem="4Dz-QI-Yrw" secondAttribute="leading" id="oCW-yX-CWc"/>
+                            <constraint firstItem="v4r-47-upX" firstAttribute="leading" secondItem="OJl-Hn-ugj" secondAttribute="leading" id="plj-cG-bYb"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="B58-WV-RUg" secondAttribute="bottom" constant="10" id="puf-qP-QVU"/>
+                            <constraint firstItem="VFe-z4-ySN" firstAttribute="top" secondItem="ljZ-JQ-HM3" secondAttribute="bottom" constant="3" id="r9g-KW-YTk"/>
+                            <constraint firstItem="4Dz-QI-Yrw" firstAttribute="leading" secondItem="OY0-oo-5EV" secondAttribute="leading" constant="16" id="sug-BS-LCc"/>
+                            <constraint firstItem="5ep-tc-igV" firstAttribute="top" secondItem="WpU-7G-e1B" secondAttribute="bottom" constant="15" id="t7m-9V-JFL"/>
+                            <constraint firstItem="VFe-z4-ySN" firstAttribute="trailing" secondItem="Dac-1p-owr" secondAttribute="trailing" id="tDx-S0-Vt3"/>
+                            <constraint firstItem="WpU-7G-e1B" firstAttribute="height" secondItem="Dac-1p-owr" secondAttribute="height" id="uPD-qZ-J8I"/>
+                            <constraint firstItem="JKG-JX-V69" firstAttribute="top" secondItem="Dac-1p-owr" secondAttribute="bottom" constant="15" id="v08-Kk-acF"/>
+                            <constraint firstItem="qer-YI-rZ4" firstAttribute="leading" secondItem="OY0-oo-5EV" secondAttribute="leading" id="xgf-A2-TLo"/>
+                            <constraint firstItem="VFe-z4-ySN" firstAttribute="leading" secondItem="ljZ-JQ-HM3" secondAttribute="leading" id="xxb-G4-MIx"/>
+                            <constraint firstItem="VdB-6D-bfr" firstAttribute="top" secondItem="qer-YI-rZ4" secondAttribute="bottom" id="zUS-yk-D8k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OY0-oo-5EV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Ds-kd-1A5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6052" y="-873"/>
+        </scene>
+        <!--会诊报告-->
+        <scene sceneID="DfV-RO-qLb">
+            <objects>
+                <viewController id="fGD-8a-rsk" userLabel="会诊报告" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ifd-rn-iza">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5x-oN-vkd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="FjH-5q-wi2"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="会诊报告" id="PkC-gt-3pX">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="dhq-pH-H6T"/>
+                                        <barButtonItem key="rightBarButtonItem" title="会诊讨论" id="S6S-Qg-Wjr"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhj-az-eqC">
+                                <rect key="frame" x="0.0" y="611" width="188" height="56"/>
+                                <color key="backgroundColor" red="0.14418537249999999" green="0.85483423219999999" blue="0.81592330970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="jyM-tr-x5L"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="保存">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="htH-qK-w12">
+                                <rect key="frame" x="187.5" y="611" width="187.5" height="56"/>
+                                <color key="backgroundColor" red="0.14418537249999999" green="0.85483423219999999" blue="0.81592330970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="提交">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wbd-aP-9e3" userLabel="分割线">
+                                <rect key="frame" x="187" y="622" width="1" height="35"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="k8K-fw-fOc"/>
+                                    <constraint firstAttribute="height" constant="35" id="vjX-p6-FcT"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" canCancelContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYH-CL-K6S">
+                                <rect key="frame" x="0.0" y="64" width="375" height="547"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="诊断计划" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ClM-pE-Lor">
+                                <rect key="frame" x="16" y="411.5" width="61.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="VRw-V0-TVE">
+                                <rect key="frame" x="16" y="425.5" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="诊断建议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hOC-Ch-fGA">
+                                <rect key="frame" x="16" y="302.5" width="61.5" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11" id="UDH-yV-kXx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="KPP-jF-U8g">
+                                <rect key="frame" x="16" y="316.5" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否就医" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yD2-Xe-1Ef">
+                                <rect key="frame" x="16" y="193" width="61.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="AdA-kK-1TS">
+                                <rect key="frame" x="16" y="207" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鉴别判断" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiw-rq-Yo1">
+                                <rect key="frame" x="16" y="84" width="65.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="CO8-3W-Sje">
+                                <rect key="frame" x="16" y="98" width="344" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="dpc-W7-Et6"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转诊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSC-Up-cRq">
+                                <rect key="frame" x="16" y="629.5" width="33" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="rJ9-ZP-Tuq">
+                                <rect key="frame" x="16" y="652" width="344" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="1nO-By-JZJ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完善检查或复诊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nju-Ba-b00">
+                                <rect key="frame" x="16" y="520.5" width="114.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="jfd-Sp-06g">
+                                <rect key="frame" x="16" y="534.5" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RYH-CL-K6S" firstAttribute="leading" secondItem="mGS-fb-LGq" secondAttribute="leading" id="2pv-xA-3za"/>
+                            <constraint firstItem="yhj-az-eqC" firstAttribute="top" secondItem="RYH-CL-K6S" secondAttribute="bottom" id="2qk-yI-xN2"/>
+                            <constraint firstItem="KPP-jF-U8g" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="5fN-P7-tHH"/>
+                            <constraint firstItem="htH-qK-w12" firstAttribute="centerY" secondItem="yhj-az-eqC" secondAttribute="centerY" id="78S-bV-6RE"/>
+                            <constraint firstItem="CO8-3W-Sje" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="7No-O7-b9e"/>
+                            <constraint firstItem="NSC-Up-cRq" firstAttribute="top" secondItem="jfd-Sp-06g" secondAttribute="bottom" constant="15" id="7SE-Kt-ZZe"/>
+                            <constraint firstItem="htH-qK-w12" firstAttribute="height" secondItem="yhj-az-eqC" secondAttribute="height" id="8b2-gC-09M"/>
+                            <constraint firstItem="mGS-fb-LGq" firstAttribute="trailing" secondItem="CO8-3W-Sje" secondAttribute="trailing" constant="15" id="8kw-Ra-Q33"/>
+                            <constraint firstItem="jfd-Sp-06g" firstAttribute="top" secondItem="nju-Ba-b00" secondAttribute="bottom" constant="3" id="Abm-Eq-038"/>
+                            <constraint firstItem="jfd-Sp-06g" firstAttribute="leading" secondItem="nju-Ba-b00" secondAttribute="leading" id="B3k-EL-b9i"/>
+                            <constraint firstItem="yhj-az-eqC" firstAttribute="bottom" secondItem="mGS-fb-LGq" secondAttribute="bottom" id="CrN-WF-zkc"/>
+                            <constraint firstItem="jfd-Sp-06g" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="D5S-MC-yOQ"/>
+                            <constraint firstItem="ClM-pE-Lor" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="GHn-dc-jLl"/>
+                            <constraint firstItem="CO8-3W-Sje" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="Gau-E9-lGh"/>
+                            <constraint firstItem="nju-Ba-b00" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="Kkj-Fm-0Mg"/>
+                            <constraint firstItem="KPP-jF-U8g" firstAttribute="leading" secondItem="hOC-Ch-fGA" secondAttribute="leading" id="L0A-M4-HpZ"/>
+                            <constraint firstItem="yD2-Xe-1Ef" firstAttribute="height" secondItem="fiw-rq-Yo1" secondAttribute="height" id="LGN-FN-xHN"/>
+                            <constraint firstItem="RYH-CL-K6S" firstAttribute="top" secondItem="G5x-oN-vkd" secondAttribute="bottom" id="LT4-hF-haB"/>
+                            <constraint firstItem="VRw-V0-TVE" firstAttribute="trailing" secondItem="CO8-3W-Sje" secondAttribute="trailing" id="O7t-2c-ATr"/>
+                            <constraint firstItem="jfd-Sp-06g" firstAttribute="trailing" secondItem="CO8-3W-Sje" secondAttribute="trailing" id="PCL-k7-77K"/>
+                            <constraint firstItem="mGS-fb-LGq" firstAttribute="trailing" secondItem="RYH-CL-K6S" secondAttribute="trailing" id="Pev-7X-aoY"/>
+                            <constraint firstItem="ClM-pE-Lor" firstAttribute="height" secondItem="fiw-rq-Yo1" secondAttribute="height" id="Q0S-DT-R8X"/>
+                            <constraint firstItem="htH-qK-w12" firstAttribute="bottom" secondItem="mGS-fb-LGq" secondAttribute="bottom" id="QDV-CX-fSk"/>
+                            <constraint firstItem="fiw-rq-Yo1" firstAttribute="leading" secondItem="mGS-fb-LGq" secondAttribute="leading" constant="16" id="Rdb-ym-8xa"/>
+                            <constraint firstItem="jfd-Sp-06g" firstAttribute="height" secondItem="CO8-3W-Sje" secondAttribute="height" id="SdB-Mf-sSQ"/>
+                            <constraint firstItem="wbd-aP-9e3" firstAttribute="centerX" secondItem="Ifd-rn-iza" secondAttribute="centerX" id="TL7-hu-zKH"/>
+                            <constraint firstItem="rJ9-ZP-Tuq" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="W0h-Na-sWF"/>
+                            <constraint firstItem="NSC-Up-cRq" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="XZ0-Ub-Qrf"/>
+                            <constraint firstItem="VRw-V0-TVE" firstAttribute="top" secondItem="ClM-pE-Lor" secondAttribute="bottom" constant="3" id="ZHN-e5-2CP"/>
+                            <constraint firstItem="G5x-oN-vkd" firstAttribute="trailing" secondItem="mGS-fb-LGq" secondAttribute="trailing" id="ZxZ-EA-WXC"/>
+                            <constraint firstItem="VRw-V0-TVE" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="amJ-iH-Ljy"/>
+                            <constraint firstItem="rJ9-ZP-Tuq" firstAttribute="leading" secondItem="NSC-Up-cRq" secondAttribute="leading" id="bba-eW-Vtx"/>
+                            <constraint firstItem="G5x-oN-vkd" firstAttribute="top" secondItem="mGS-fb-LGq" secondAttribute="top" id="bgc-K8-G9W"/>
+                            <constraint firstItem="KPP-jF-U8g" firstAttribute="height" secondItem="CO8-3W-Sje" secondAttribute="height" id="bnD-iV-lIM"/>
+                            <constraint firstItem="AdA-kK-1TS" firstAttribute="top" secondItem="yD2-Xe-1Ef" secondAttribute="bottom" constant="3" id="bzF-b2-Qxw"/>
+                            <constraint firstItem="nju-Ba-b00" firstAttribute="top" secondItem="VRw-V0-TVE" secondAttribute="bottom" constant="15" id="cDD-Kd-dNZ"/>
+                            <constraint firstItem="htH-qK-w12" firstAttribute="width" secondItem="yhj-az-eqC" secondAttribute="width" id="cl2-tb-b6Q"/>
+                            <constraint firstItem="hOC-Ch-fGA" firstAttribute="top" secondItem="AdA-kK-1TS" secondAttribute="bottom" constant="15" id="dMQ-xr-8c0"/>
+                            <constraint firstItem="AdA-kK-1TS" firstAttribute="leading" secondItem="yD2-Xe-1Ef" secondAttribute="leading" id="e6g-UR-77a"/>
+                            <constraint firstItem="nju-Ba-b00" firstAttribute="height" secondItem="fiw-rq-Yo1" secondAttribute="height" id="emQ-Tu-cGS"/>
+                            <constraint firstItem="VRw-V0-TVE" firstAttribute="height" secondItem="CO8-3W-Sje" secondAttribute="height" id="ezE-gP-ChS"/>
+                            <constraint firstItem="hOC-Ch-fGA" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="fDZ-Em-VQe"/>
+                            <constraint firstItem="KPP-jF-U8g" firstAttribute="top" secondItem="hOC-Ch-fGA" secondAttribute="bottom" constant="3" id="gn3-px-E3H"/>
+                            <constraint firstItem="rJ9-ZP-Tuq" firstAttribute="trailing" secondItem="CO8-3W-Sje" secondAttribute="trailing" id="im6-Ik-ciA"/>
+                            <constraint firstItem="mGS-fb-LGq" firstAttribute="trailing" secondItem="htH-qK-w12" secondAttribute="trailing" id="lHS-Bp-hGF"/>
+                            <constraint firstItem="CO8-3W-Sje" firstAttribute="top" secondItem="fiw-rq-Yo1" secondAttribute="bottom" constant="3" id="n9P-fe-Vyy"/>
+                            <constraint firstItem="AdA-kK-1TS" firstAttribute="height" secondItem="CO8-3W-Sje" secondAttribute="height" id="nE3-E0-luP"/>
+                            <constraint firstItem="fiw-rq-Yo1" firstAttribute="top" secondItem="RYH-CL-K6S" secondAttribute="top" constant="20" id="op6-PY-hhA"/>
+                            <constraint firstItem="yD2-Xe-1Ef" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="pOg-fP-etB"/>
+                            <constraint firstItem="ClM-pE-Lor" firstAttribute="top" secondItem="KPP-jF-U8g" secondAttribute="bottom" constant="15" id="qd8-r0-WYF"/>
+                            <constraint firstItem="KPP-jF-U8g" firstAttribute="trailing" secondItem="CO8-3W-Sje" secondAttribute="trailing" id="rFt-gU-mwL"/>
+                            <constraint firstItem="htH-qK-w12" firstAttribute="leading" secondItem="yhj-az-eqC" secondAttribute="trailing" id="szO-N1-WId"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="wbd-aP-9e3" secondAttribute="bottom" constant="10" id="taR-3G-yRp"/>
+                            <constraint firstItem="rJ9-ZP-Tuq" firstAttribute="top" secondItem="NSC-Up-cRq" secondAttribute="bottom" constant="3" id="tcb-se-si2"/>
+                            <constraint firstItem="AdA-kK-1TS" firstAttribute="trailing" secondItem="CO8-3W-Sje" secondAttribute="trailing" id="tn9-Od-MGf"/>
+                            <constraint firstItem="AdA-kK-1TS" firstAttribute="leading" secondItem="fiw-rq-Yo1" secondAttribute="leading" id="vy0-pa-Ux6"/>
+                            <constraint firstItem="yhj-az-eqC" firstAttribute="leading" secondItem="mGS-fb-LGq" secondAttribute="leading" id="wqC-eI-AtH"/>
+                            <constraint firstItem="hOC-Ch-fGA" firstAttribute="height" secondItem="fiw-rq-Yo1" secondAttribute="height" id="xDr-yW-v0w"/>
+                            <constraint firstItem="yD2-Xe-1Ef" firstAttribute="top" secondItem="CO8-3W-Sje" secondAttribute="bottom" constant="15" id="xGE-Z7-AZF"/>
+                            <constraint firstItem="VRw-V0-TVE" firstAttribute="leading" secondItem="ClM-pE-Lor" secondAttribute="leading" id="xfI-HE-dCf"/>
+                            <constraint firstItem="G5x-oN-vkd" firstAttribute="leading" secondItem="mGS-fb-LGq" secondAttribute="leading" id="z16-zO-8S9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="mGS-fb-LGq"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QNd-U6-LfV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6052" y="-873"/>
+        </scene>
+        <!--会诊报告-->
+        <scene sceneID="VNT-IK-MkJ">
+            <objects>
+                <viewController id="Y4i-v1-nu7" userLabel="会诊报告" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zec-sI-KH7">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGH-lq-2i0">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="IKg-e4-aLQ"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="会诊报告" id="Vg4-Z3-LdE">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" id="Jp8-ho-gvJ"/>
+                                        <barButtonItem key="rightBarButtonItem" title="会诊讨论" id="Wpe-oC-8B1"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3la-Fb-ry4">
+                                <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                                <color key="backgroundColor" red="0.14418537249999999" green="0.85483423219999999" blue="0.81592330970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="cl3-Jy-xj0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <state key="normal" title="下载报告">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" canCancelContentTouches="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d1C-3z-yVu">
+                                <rect key="frame" x="0.0" y="64" width="375" height="547"/>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="诊断计划" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3V-1q-ftS">
+                                <rect key="frame" x="16" y="411.5" width="61.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="MSS-0g-igC">
+                                <rect key="frame" x="16" y="425.5" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="诊断建议" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtG-BM-hQB">
+                                <rect key="frame" x="16" y="302.5" width="61.5" height="11"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="11" id="5Qh-BQ-3fq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="2lQ-Xv-7RY">
+                                <rect key="frame" x="16" y="316.5" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="是否就医" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TGC-hu-yii">
+                                <rect key="frame" x="16" y="193" width="61.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="v6T-Kb-Qjm">
+                                <rect key="frame" x="16" y="207" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鉴别判断" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XdL-GF-ah5">
+                                <rect key="frame" x="16" y="84" width="65.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="x9L-Ud-kvk">
+                                <rect key="frame" x="16" y="98" width="344" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="emr-QU-0F8"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="转诊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uV5-t4-98O">
+                                <rect key="frame" x="16" y="629.5" width="33" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="iW6-wM-bw0">
+                                <rect key="frame" x="16" y="652" width="344" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="TDI-fd-tp4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="完善检查或复诊" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xek-9p-4os">
+                                <rect key="frame" x="16" y="520.5" width="114.5" height="11"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" text="有病快治" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="21" translatesAutoresizingMaskIntoConstraints="NO" id="1d3-dh-dUV">
+                                <rect key="frame" x="16" y="534.5" width="344" height="80"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Vec-pb-w64" firstAttribute="trailing" secondItem="3la-Fb-ry4" secondAttribute="trailing" id="2HO-KN-0dD"/>
+                            <constraint firstItem="Vec-pb-w64" firstAttribute="trailing" secondItem="x9L-Ud-kvk" secondAttribute="trailing" constant="15" id="2Qe-z1-oHh"/>
+                            <constraint firstItem="1d3-dh-dUV" firstAttribute="top" secondItem="Xek-9p-4os" secondAttribute="bottom" constant="3" id="2bD-HO-5m3"/>
+                            <constraint firstItem="d1C-3z-yVu" firstAttribute="top" secondItem="kGH-lq-2i0" secondAttribute="bottom" id="4CE-ZA-eAs"/>
+                            <constraint firstItem="v6T-Kb-Qjm" firstAttribute="trailing" secondItem="x9L-Ud-kvk" secondAttribute="trailing" id="4Ds-4n-kXJ"/>
+                            <constraint firstItem="MSS-0g-igC" firstAttribute="leading" secondItem="f3V-1q-ftS" secondAttribute="leading" id="4eO-Hv-FNn"/>
+                            <constraint firstItem="Xek-9p-4os" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="5ow-18-Tfq"/>
+                            <constraint firstItem="uV5-t4-98O" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="5sZ-za-bN2"/>
+                            <constraint firstItem="MSS-0g-igC" firstAttribute="top" secondItem="f3V-1q-ftS" secondAttribute="bottom" constant="3" id="6JB-pq-u8N"/>
+                            <constraint firstItem="2lQ-Xv-7RY" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="6jy-us-CFO"/>
+                            <constraint firstItem="x9L-Ud-kvk" firstAttribute="top" secondItem="XdL-GF-ah5" secondAttribute="bottom" constant="3" id="77M-Bb-u7U"/>
+                            <constraint firstItem="Xek-9p-4os" firstAttribute="top" secondItem="MSS-0g-igC" secondAttribute="bottom" constant="15" id="9Mk-dJ-hdg"/>
+                            <constraint firstItem="x9L-Ud-kvk" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="Ahs-bs-cmb"/>
+                            <constraint firstItem="f3V-1q-ftS" firstAttribute="top" secondItem="2lQ-Xv-7RY" secondAttribute="bottom" constant="15" id="FhX-X9-sE2"/>
+                            <constraint firstItem="TGC-hu-yii" firstAttribute="height" secondItem="XdL-GF-ah5" secondAttribute="height" id="G6a-6P-2ki"/>
+                            <constraint firstItem="kGH-lq-2i0" firstAttribute="top" secondItem="Vec-pb-w64" secondAttribute="top" id="GJO-lN-Z4Y"/>
+                            <constraint firstItem="vtG-BM-hQB" firstAttribute="top" secondItem="v6T-Kb-Qjm" secondAttribute="bottom" constant="15" id="Itm-Hl-B8M"/>
+                            <constraint firstItem="v6T-Kb-Qjm" firstAttribute="leading" secondItem="TGC-hu-yii" secondAttribute="leading" id="JE2-1t-cra"/>
+                            <constraint firstItem="1d3-dh-dUV" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="KQZ-lR-MnP"/>
+                            <constraint firstItem="kGH-lq-2i0" firstAttribute="trailing" secondItem="Vec-pb-w64" secondAttribute="trailing" id="L3n-0h-80e"/>
+                            <constraint firstItem="iW6-wM-bw0" firstAttribute="leading" secondItem="uV5-t4-98O" secondAttribute="leading" id="LA3-MI-q9m"/>
+                            <constraint firstItem="1d3-dh-dUV" firstAttribute="leading" secondItem="Xek-9p-4os" secondAttribute="leading" id="MQV-zV-8yf"/>
+                            <constraint firstItem="f3V-1q-ftS" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="PJo-fP-2l7"/>
+                            <constraint firstItem="vtG-BM-hQB" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="QRr-5h-I3r"/>
+                            <constraint firstItem="XdL-GF-ah5" firstAttribute="leading" secondItem="Vec-pb-w64" secondAttribute="leading" constant="16" id="Qvp-lG-9Jo"/>
+                            <constraint firstItem="iW6-wM-bw0" firstAttribute="trailing" secondItem="x9L-Ud-kvk" secondAttribute="trailing" id="SlC-ul-cU6"/>
+                            <constraint firstItem="Xek-9p-4os" firstAttribute="height" secondItem="XdL-GF-ah5" secondAttribute="height" id="T2I-db-aw2"/>
+                            <constraint firstItem="TGC-hu-yii" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="UT2-gr-Mch"/>
+                            <constraint firstItem="3la-Fb-ry4" firstAttribute="leading" secondItem="Vec-pb-w64" secondAttribute="leading" id="XIv-kx-RNm"/>
+                            <constraint firstItem="1d3-dh-dUV" firstAttribute="trailing" secondItem="x9L-Ud-kvk" secondAttribute="trailing" id="YBe-MF-txo"/>
+                            <constraint firstItem="2lQ-Xv-7RY" firstAttribute="trailing" secondItem="x9L-Ud-kvk" secondAttribute="trailing" id="YF2-zE-qrK"/>
+                            <constraint firstItem="iW6-wM-bw0" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="a2o-vU-k46"/>
+                            <constraint firstItem="MSS-0g-igC" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="cKn-KL-rNQ"/>
+                            <constraint firstItem="3la-Fb-ry4" firstAttribute="bottom" secondItem="Vec-pb-w64" secondAttribute="bottom" id="e0P-Sy-eCg"/>
+                            <constraint firstItem="f3V-1q-ftS" firstAttribute="height" secondItem="XdL-GF-ah5" secondAttribute="height" id="fYq-Ec-fCU"/>
+                            <constraint firstItem="v6T-Kb-Qjm" firstAttribute="top" secondItem="TGC-hu-yii" secondAttribute="bottom" constant="3" id="g4Y-d3-HZT"/>
+                            <constraint firstItem="XdL-GF-ah5" firstAttribute="top" secondItem="d1C-3z-yVu" secondAttribute="top" constant="20" id="g6l-yS-Pub"/>
+                            <constraint firstItem="Vec-pb-w64" firstAttribute="trailing" secondItem="d1C-3z-yVu" secondAttribute="trailing" id="gIU-f2-GKh"/>
+                            <constraint firstItem="TGC-hu-yii" firstAttribute="top" secondItem="x9L-Ud-kvk" secondAttribute="bottom" constant="15" id="heR-wK-xOy"/>
+                            <constraint firstItem="MSS-0g-igC" firstAttribute="trailing" secondItem="x9L-Ud-kvk" secondAttribute="trailing" id="j27-5u-bpv"/>
+                            <constraint firstItem="MSS-0g-igC" firstAttribute="height" secondItem="x9L-Ud-kvk" secondAttribute="height" id="jUk-ve-NAM"/>
+                            <constraint firstItem="kGH-lq-2i0" firstAttribute="leading" secondItem="Vec-pb-w64" secondAttribute="leading" id="mgB-nP-Yh3"/>
+                            <constraint firstItem="vtG-BM-hQB" firstAttribute="height" secondItem="XdL-GF-ah5" secondAttribute="height" id="o2p-Km-tXe"/>
+                            <constraint firstItem="v6T-Kb-Qjm" firstAttribute="height" secondItem="x9L-Ud-kvk" secondAttribute="height" id="pSD-2h-wzR"/>
+                            <constraint firstItem="uV5-t4-98O" firstAttribute="top" secondItem="1d3-dh-dUV" secondAttribute="bottom" constant="15" id="q5e-my-E9z"/>
+                            <constraint firstItem="1d3-dh-dUV" firstAttribute="height" secondItem="x9L-Ud-kvk" secondAttribute="height" id="s5l-nF-zc7"/>
+                            <constraint firstItem="2lQ-Xv-7RY" firstAttribute="height" secondItem="x9L-Ud-kvk" secondAttribute="height" id="sEp-Q6-qh6"/>
+                            <constraint firstItem="x9L-Ud-kvk" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="sna-09-d9P"/>
+                            <constraint firstItem="d1C-3z-yVu" firstAttribute="leading" secondItem="Vec-pb-w64" secondAttribute="leading" id="t1f-zD-cLn"/>
+                            <constraint firstItem="2lQ-Xv-7RY" firstAttribute="top" secondItem="vtG-BM-hQB" secondAttribute="bottom" constant="3" id="t8t-nK-QKU"/>
+                            <constraint firstItem="iW6-wM-bw0" firstAttribute="top" secondItem="uV5-t4-98O" secondAttribute="bottom" constant="3" id="tUh-sr-aWF"/>
+                            <constraint firstItem="2lQ-Xv-7RY" firstAttribute="leading" secondItem="vtG-BM-hQB" secondAttribute="leading" id="vma-wE-ShX"/>
+                            <constraint firstItem="v6T-Kb-Qjm" firstAttribute="leading" secondItem="XdL-GF-ah5" secondAttribute="leading" id="wrs-g1-y0K"/>
+                            <constraint firstItem="3la-Fb-ry4" firstAttribute="top" secondItem="d1C-3z-yVu" secondAttribute="bottom" id="x0g-ez-Dlb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vec-pb-w64"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZI3-Jl-A9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7034" y="-850"/>
+        </scene>
+    </scenes>
+</document>

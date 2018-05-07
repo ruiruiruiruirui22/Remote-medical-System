@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13189.4" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z46-Tz-dMv">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13165.3"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--我的报表-->
+        <scene sceneID="hmC-g6-cXB">
+            <objects>
+                <viewController id="Z46-Tz-dMv" userLabel="我的报表" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1u4-66-Poe">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="L2B-TY-RfH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                                <color key="backgroundColor" red="0.14418537249999999" green="0.85483423219999999" blue="0.81592330970000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="80" id="fS8-KT-W28"/>
+                                    <constraint firstAttribute="height" constant="80" id="sve-t6-RwI"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的报表" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yBF-rX-aIb">
+                                <rect key="frame" x="137" y="38" width="101.5" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.93147208120000002" green="0.93147208120000002" blue="0.93147208120000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="E8K-EU-hZo">
+                                <rect key="frame" x="46" y="152" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PJy-Zb-aXR">
+                                    <size key="itemSize" width="218" height="114"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="crO-dT-e3t">
+                                        <rect key="frame" x="11" y="0.0" width="218" height="114"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="218" height="114"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yBF-rX-aIb" firstAttribute="centerX" secondItem="L2B-TY-RfH" secondAttribute="centerX" id="5Bv-aw-MqG"/>
+                            <constraint firstItem="yBF-rX-aIb" firstAttribute="centerY" secondItem="L2B-TY-RfH" secondAttribute="centerY" constant="13" id="8ll-9g-X6E"/>
+                            <constraint firstItem="L2B-TY-RfH" firstAttribute="leading" secondItem="NpC-Yv-86Q" secondAttribute="leading" id="RXa-f8-Ydg"/>
+                            <constraint firstItem="L2B-TY-RfH" firstAttribute="top" secondItem="1u4-66-Poe" secondAttribute="top" id="TDo-Fm-ku6"/>
+                            <constraint firstItem="L2B-TY-RfH" firstAttribute="trailing" secondItem="NpC-Yv-86Q" secondAttribute="trailing" id="gXv-uA-BHS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="NpC-Yv-86Q"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的报表" image="baobiao1" selectedImage="baobiao-hover1" id="deG-DC-fz8"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QqP-kJ-z4k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2505" y="-859"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="baobiao-hover1" width="25" height="25"/>
+        <image name="baobiao1" width="25" height="25"/>
+    </resources>
+</document>
